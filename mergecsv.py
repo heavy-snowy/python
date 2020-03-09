@@ -4,7 +4,6 @@ import pandas as pd
 renting=[]
 renting.append(pd.read_csv('total.csv',delimiter=':',header=None))
 renting.append(pd.read_csv('rent.csv',delimiter=':',header=None))
-print('========================')
 nf=pd.concat(renting)
 
 nf.to_csv('total.csv',header=None,index=False,sep=':')
